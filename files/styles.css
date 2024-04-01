@@ -43,12 +43,12 @@ h1 {
     font-size: 30px;
     /* Tamaño del texto */
     font-weight: 800;
-    padding: 10px 20px;
+    padding: 10px;
     /* Añadir relleno al título */
     border-radius: 35px;
     /* Agregar bordes redondeados */
     background-color: #ffffff;
-    /* Color de fondo azul */
+    text-align: center;
 }
 
 nav ul {
