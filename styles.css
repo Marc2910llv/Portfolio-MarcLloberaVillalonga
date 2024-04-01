@@ -1,0 +1,230 @@
+/* Estilos generales */
+body {
+    font-family: Open, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    /* Color de fondo azul claro */
+    color: #000000;
+    /* Color de texto principal */
+}
+
+header {
+    font-family: Open, sans-serif;
+    background-color: #000000;
+    /* Azul oscuro */
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+.header-left {
+    flex-direction: column;
+    /* Alinear elementos en columna */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    /* Establecer posición relativa */
+    color: #fff
+}
+
+.blue-link {
+    color: #00a9ec;
+    /* Color blanco para los enlaces */
+}
+
+h1 {
+    margin: 0;
+    color: #000000;
+    /* Texto blanco */
+    font-size: 30px;
+    /* Tamaño del texto */
+    font-weight: 800;
+    padding: 10px 20px;
+    /* Añadir relleno al título */
+    border-radius: 35px;
+    /* Agregar bordes redondeados */
+    background-color: #ffffff;
+    /* Color de fondo azul */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1;
+    display: flex;
+    /* Cambiado a flex para alinear elementos en una fila */
+    justify-content: center;
+    /* Centrar los elementos */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Eliminar margen derecho del último elemento */
+}
+
+nav ul li a {
+    color: #ffffff;
+    /* Texto blanco */
+    text-decoration: none;
+    font-weight: 800;
+    position: relative;
+    /* Establecer posición relativa */
+}
+
+nav ul li a::after {
+    content: '';
+    /* Agregar línea de subrayado */
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* Distancia del subrayado desde el texto */
+    width: 100%;
+    height: 2px;
+    /* Grosor del subrayado */
+    background-color: #fff;
+    /* Color del subrayado */
+    transition: width 0.3s;
+    /* Transición para el subrayado */
+    opacity: 0;
+    /* Ocultar subrayado inicialmente */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    /* Mostrar subrayado en el hover */
+    opacity: 1;
+    /* Hacer visible el subrayado */
+}
+
+/* Estilos para la foto en el encabezado */
+.foto {
+    margin-right: 0;
+    /* Espacio entre la foto y los botones de idioma */
+    border-radius: 35%;
+    /* Hacer el borde de la foto redondeado */
+    overflow: hidden;
+    /* Ocultar cualquier contenido que se salga del borde */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Agregar sombra */
+}
+
+.foto img {
+    width: 150px;
+    /* Tamaño de la foto */
+    height: auto;
+    display: block;
+    /* Evitar que la imagen tenga espacios vacíos debajo */
+}
+
+.idioma-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.idioma-buttons a {
+    margin-left: 10px;
+    /* Espacio entre botones de idioma */
+}
+
+.idioma-buttons img {
+    width: 30px;
+    /* Tamaño de las imágenes de la bandera */
+    height: auto;
+}
+
+
+/* Estilos específicos para secciones y footer */
+section {
+    padding: 20px;
+    border-bottom: 2px solid #000000;
+    /* Separador azul entre secciones */
+}
+
+h2 {
+    color: #000000;
+    /* Azul */
+    font-weight: 800;
+}
+
+h2-footer {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 22px;
+    /* Tamaño del texto */
+}
+
+.proyecto {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000000;
+    /* Fondo gris oscuro para footer */
+    color: #fff;
+    /* Texto blanco */
+    flex-direction: column;
+    /* Alinear elementos en columna */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    /* Establecer posición relativa */
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    /* Enlaces en texto blanco */
+    text-decoration: underline;
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+    /* Animación de desvanecimiento */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilos para herramientas y lenguajes */
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tools-container > div {
+    background-color: #ffffff;
+    /* Color de fondo blanco */
+    border: 3px solid #000000;
+    /* Borde de color negro */
+    border-radius: 10px;
+    /* Borde redondeado */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tools-container img {
+    width: 50px;
+    height: 48px;
+    margin-bottom: 10px;
+}
